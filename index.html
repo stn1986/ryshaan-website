@@ -1,48 +1,65 @@
-<style>
-	#container {
-	}
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
-	#image-container {
-		display: flex;
-		flex-direction: row;
+		<style>
+			#container {
+			}
 
-		> div {
-			flex: 1;
-		}
+			#image-container {
+				display: flex;
+				flex-direction: row;
 
-		div:nth-child(1) {
-			transform: rotateZ(-30deg);
-		}
+				> div {
+					flex: 1;
+				}
 
-		div:nth-child(2) {
-			z-index: 100;
-		}
+				div:nth-child(1) {
+					transform: rotateZ(-30deg);
+				}
 
-		div:nth-child(3) {
-			transform: rotateZ(30deg);
-		}
-	}
+				div:nth-child(2) {
+					z-index: 100;
+				}
 
-	#image-container img {
-		width: 500px;
-	}
+				div:nth-child(3) {
+					transform: rotateZ(30deg);
+				}
+			}
 
-	#text-container {
-		font-size: 200%;
-		text-align: center;
-	}
-</style>
+			#image-container img {
+				width: 500px;
+			}
 
-<div id="container">
-	<div id="image-container">
-		<div><img src="heart.png" /></div>
-		<div><img src="unicorn.webp" /></div>
-		<div><img src="heart.png" /></div>
-	</div>
+			#text-container {
+				font-size: 3rem;
+				text-align: center;
+				font-family: "Cedarville Cursive", cursive;
+				font-weight: 400;
+				font-style: normal;
 
-	<div id="text-container">
-		<div>HALLO WELKOM</div>
-		<div>IN RYSHAAN</div>
-		<div>.NL</div>
-	</div>
-</div>
+				> div {
+					margin-top: 1rem;
+					line-height: 3rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="image-container">
+				<div><img src="heart.png" /></div>
+				<div><img src="unicorn.webp" /></div>
+				<div><img src="heart.png" /></div>
+			</div>
+
+			<div id="text-container">
+				<div>hallo welkom</div>
+				<div>in ryshaan</div>
+				<div>.nl</div>
+			</div>
+		</div>
+	</body>
+</html>
