@@ -10,13 +10,14 @@
 
 			#image-container {
 				display: flex;
-				flex-direction: row;
+				align-items: center;
+				text-align: center;
 
 				> div {
 					flex: 1;
 				}
 
-				div:nth-child(1) {
+				div:nth-child(1) img {
 					transform: rotateZ(-30deg);
 				}
 
@@ -24,13 +25,13 @@
 					z-index: 100;
 				}
 
-				div:nth-child(3) {
+				div:nth-child(3) img {
 					transform: rotateZ(30deg);
 				}
 			}
 
 			#image-container img {
-				width: 500px;
+				max-width: 300px;
 			}
 
 			#text-container {
@@ -57,7 +58,7 @@
 
 			<div id="text-container">
 				<div>hallo welkom</div>
-				<div>in ryshaan</div>
+				<div>bij ryshaan</div>
 				<div>.nl</div>
 			</div>
 		</div>
