@@ -1,6 +1,26 @@
 <style>
+	#container {
+	}
+
 	#image-container {
-		text-align: center;
+		display: flex;
+		flex-direction: row;
+
+		> div {
+			flex: 1;
+		}
+
+		div:nth-child(1) {
+			transform: rotateZ(-30deg);
+		}
+
+		div:nth-child(2) {
+			z-index: 100;
+		}
+
+		div:nth-child(3) {
+			transform: rotateZ(30deg);
+		}
 	}
 
 	#image-container img {
@@ -13,12 +33,16 @@
 	}
 </style>
 
-<div id="image-container">
-	<img src="unicorn.webp" />
-</div>
+<div id="container">
+	<div id="image-container">
+		<div><img src="heart.png" /></div>
+		<div><img src="unicorn.webp" /></div>
+		<div><img src="heart.png" /></div>
+	</div>
 
-<div id="text-container">
-	<div>HALLO WELKOM</div>
-	<div>IN RYSHAAN</div>
-	<div>.NL</div>
+	<div id="text-container">
+		<div>HALLO WELKOM</div>
+		<div>IN RYSHAAN</div>
+		<div>.NL</div>
+	</div>
 </div>
