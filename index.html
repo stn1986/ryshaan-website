@@ -47,6 +47,23 @@
 				}
 			}
 		</style>
+
+				<script>
+					const password = "6607";
+
+					function checkPassword() {
+						const userPassword = prompt("Geef wachtwoord:");
+						if (userPassword == password) {
+							alert("Welkom!");
+						} else {
+							alert("Nee! Fout!");
+							window.location.href = "https://www.google.com";
+						}
+					}
+
+					window.onload = checkPassword();
+
+				</script>
 	</head>
 	<body>
 		<div id="container">
