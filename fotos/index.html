@@ -47,20 +47,27 @@
 				}
 			}
 		</style>
+
+				<script>
+					const password = "6607";
+
+					function checkPassword() {
+						const userPassword = prompt("Geef wachtwoord:");
+						if (userPassword == password) {
+							alert("Welkom!");
+						} else {
+							alert("Nee! Fout!");
+							window.location.href = "https://www.ryshaan.nl";
+						}
+					}
+
+					window.onload = checkPassword();
+
+				</script>
 	</head>
 	<body>
 		<div id="container">
-			<div id="image-container">
-				<div><img src="heart.png" /></div>
-				<div><img src="unicorn.webp" /></div>
-				<div><img src="heart.png" /></div>
-			</div>
-
-			<div id="text-container">
-				<div>hallo welkom</div>
-				<div>bij ryshaan</div>
-				<div>.nl</div>
-			</div>
+			FOTOS
 		</div>
 	</body>
 </html>
