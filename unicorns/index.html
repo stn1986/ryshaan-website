@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6efff">
+  <meta name="description" content="Tien magische eenhoorns voor Ryshaan. Kijk, tik en swipe!">
+  <title>Eenhoornwereld · Ryshaan</title>
+  <link rel="icon" href="images/star-flight.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <a class="home icon-button" href="../" aria-label="Terug naar de homepage">⌂</a>
+      <div class="brand"><span class="eyebrow">RYSHAAN'S MAGISCHE PLEKJE</span><h1>Eenhoornwereld<span aria-hidden="true"> ✦</span></h1></div>
+      <button id="fullscreen" class="icon-button" aria-label="Volledig scherm" title="Volledig scherm" hidden>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="viewer" aria-label="Eenhoorn bekijken">
+        <span class="sparkle sparkle-one" aria-hidden="true">✧</span><span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+        <span class="sparkle sparkle-three" aria-hidden="true">✧</span>
+        <button id="previous" class="arrow icon-button" aria-label="Vorige eenhoorn">‹</button>
+        <div id="picture-area" class="picture-area">
+          <img id="picture" src="images/star-flight.jpg" alt="Een blauwe eenhoorn met grote vleugels vliegt tussen fonkelende sterren" draggable="false" fetchpriority="high">
+          <div id="image-error" hidden><p>Deze eenhoorn is even verstopt.</p><button id="retry">Probeer opnieuw</button></div>
+        </div>
+        <button id="next" class="arrow icon-button" aria-label="Volgende eenhoorn">›</button>
+      </section>
+      <div class="caption" aria-live="polite" aria-atomic="true"><span class="eyebrow" id="counter">EENHOORN 1 / 10</span><h2 id="name">Sterrenvlucht</h2></div>
+      <p class="hint">Swipe om te ontdekken <span aria-hidden="true">↔</span></p>
+    </main>
+
+    <footer>
+      <nav id="thumbnails" aria-label="Kies een eenhoorn"></nav>
+      <div class="footer-line"><span>Een beetje magie, speciaal voor Ryshaan <span aria-hidden="true">♡</span></span><button id="credits-button">Over de plaatjes</button></div>
+    </footer>
+  </div>
+  <dialog id="credits">
+    <div class="dialog-heading"><h2>Onze eenhoorns</h2><button id="close-credits" class="icon-button" aria-label="Sluiten">×</button></div>
+    <p>Deze magische fantasiebeelden komen van StockCake. Ze zijn gemaakt met AI en gedeeld als publiek domein (CC0).</p>
+    <ul id="sources"></ul>
+    <a href="https://stockcake.com/info/license" target="_blank" rel="noopener noreferrer">Over StockCake en CC0 ↗</a>
+  </dialog>
+  <noscript><p class="noscript">Zet JavaScript aan om alle eenhoorns te bekijken.</p></noscript>
+</body>
+</html>
